@@ -315,6 +315,13 @@ a {
     padding: 0px !important;
 }
 
+.project-image .vid {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0px !important;
+}
+
 .project-info {
     min-width: 0;
     padding: 17px;
