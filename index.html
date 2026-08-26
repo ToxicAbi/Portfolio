@@ -39,8 +39,8 @@
             </div>
             <div class="profile-links">
                 <a href="https://www.roblox.com/users/487533386/profile" target="_blank"
-                    rel="noopener noreferrer">Roblox profile ↗</a>
-                <a href="https://discord.gg/5HBqFz77fW" target="_blank" rel="noopener noreferrer">Discord server ↗</a>
+                    rel="noopener noreferrer" class="reveal stagger-5">Roblox profile ↗</a>
+                <a class="reveal stagger-6">Discord: abi_dev07</a>
             </div>
             <div class="available">
                 <span></span>
@@ -51,11 +51,14 @@
         <div class="content-column" id="top">
 
             <div class="content-header">
-                <h1>
-                    AbiDeveloper - 5 Years Experience
-                    <br>
-                    <span>Roblox Full-stack Developer</span>
+                <div class="header-badge">ROBLOX FULL-STACK DEVELOPER</div>
+                <h1 class="header-name">
+                    <span class="name-line">Abi</span><span class="name-highlight">Developer</span>
                 </h1>
+                <div class="header-subtitle">
+                    <span class="subtitle-text">5 Years Experience</span>
+                    <span class="typing-cursor">|</span>
+                </div>
                 <p class="header-text">
                     Hi, I'm Abi. I am a full-stack Roblox developer. I can design systems ranging from simple to complex
                     across a wide variety of genres. With my experience, I can make your systems run smoothly, fix bugs
@@ -68,21 +71,53 @@
                     <span>1.</span>
                     About me
                 </h2>
-                <div class="prose two-column-text">
-                    <p>
-                        I have been scripting on Roblox for about 5 to 6 years now. My core strengths lie in backend
-                        development and designing optimized systems. As for the frontend, I know how to seamlessly
-                        integrate it with the backend, leveraging my skills to make everything more engaging and
-                        visually appealing.
-                    </p>
-                    <p>
-                        The systems I create always prioritize security and anti-cheat mechanisms ("Never trust the
-                        client"). I have a deep understanding of APIs, OOP, type checking, system optimization,
-                        networking, and more.
-
-                        I never use free models, nor do I rely entirely on AI to code. I only use AI as a productivity
-                        tool to speed up my workflow, using it to handle repetitive, time-consuming tasks.
-                    </p>
+                <div class="about-layout">
+                    <div class="about-left">
+                        <p>
+                            I have been scripting on Roblox for about 5 to 6 years now. My core strengths lie in backend
+                            development and designing optimized systems. As for the frontend, I know how to seamlessly
+                            integrate it with the backend, leveraging my skills to make everything more engaging and
+                            visually appealing.
+                        </p>
+                        <p>
+                            The systems I create always prioritize security and anti-cheat mechanisms
+                            (<em>"Never trust the client"</em>). I have a deep understanding of APIs, OOP, type checking,
+                            system optimization, networking, and more. I never use free models, nor do I rely entirely on
+                            AI to code.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Lua / Luau</span>
+                            <span class="skill-tag">Roblox API</span>
+                            <span class="skill-tag">OOP</span>
+                            <span class="skill-tag">DataStores</span>
+                            <span class="skill-tag">Networking</span>
+                            <span class="skill-tag">Anti-Exploit</span>
+                            <span class="skill-tag">UI / Frontend</span>
+                            <span class="skill-tag">System Optimization</span>
+                            <span class="skill-tag">Type Checking</span>
+                            <span class="skill-tag">Module Frameworks</span>
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <div class="about-stats-card">
+                            <div class="about-stat">
+                                <span class="about-stat-value">5+</span>
+                                <span class="about-stat-label">Years scripting</span>
+                            </div>
+                            <div class="about-stat">
+                                <span class="about-stat-value">3M+</span>
+                                <span class="about-stat-label">Game visits</span>
+                            </div>
+                            <div class="about-stat">
+                                <span class="about-stat-value">5</span>
+                                <span class="about-stat-label">Languages</span>
+                            </div>
+                            <div class="about-stat">
+                                <span class="about-stat-value">7+</span>
+                                <span class="about-stat-label">Projects shipped</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="ai-note">
                     <h3>My work within AI</h3>
@@ -115,7 +150,7 @@
 
                 </div>
                 
-                <button id="show-more-btn">Show more</button>
+                <button id="show-more-btn" class="reveal">Show more</button>
             </section>
 
             <section class="resume-section">
@@ -125,11 +160,14 @@
                 </h2>
 
                 <div class="service-columns service-do-dont">
-                    <div>
-                        <h3>What I can do</h3>
+                    <div class="service-card service-card-do">
+                        <div class="service-card-header">
+                            <span class="service-icon">&#10003;</span>
+                            <h3>What I can do</h3>
+                        </div>
                         <ul class="check-list">
                             <li>Datastores, leaderboards</li>
-                            <li>Optimized Npc System</li>
+                            <li>Optimized NPC System</li>
                             <li>Cross-server and multiplayer systems</li>
                             <li>UI animations, UI logics</li>
                             <li>Frameworks, plugins, utility modules</li>
@@ -139,8 +177,11 @@
                         </ul>
                     </div>
 
-                    <div class="dont-panel">
-                        <h3>What I can't do</h3>
+                    <div class="service-card service-card-dont">
+                        <div class="service-card-header">
+                            <span class="service-icon">&#10005;</span>
+                            <h3>What I can't do</h3>
+                        </div>
                         <ul>
                             <li>Gun Systems</li>
                             <li>Vehicle Chassis</li>
@@ -157,9 +198,18 @@
                         to be replaced.</p>
                     <div class="tool-line">
                         <strong>Frameworks I use</strong>
-                        <br>
-                        Knit / vide / ForgeVFX / Roact / Suphi's DataStore / Packet / Signal / ProfileStore /
-                        ProfileService / ByteNet
+                        <div class="framework-tags">
+                            <span>Knit</span>
+                            <span>vide</span>
+                            <span>ForgeVFX</span>
+                            <span>Roact</span>
+                            <span>Suphi's DataStore</span>
+                            <span>Packet</span>
+                            <span>Signal</span>
+                            <span>ProfileStore</span>
+                            <span>ProfileService</span>
+                            <span>ByteNet</span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -169,12 +219,29 @@
                     <span>5.</span>
                     Commission terms
                 </h2>
-                <p>
-                    Payments are accepted in <strong>USD or Robux</strong>. Robux commissions must be above <strong>10,000
-                        R$</strong> and above <strong>250$</strong> for USD. Payment structure is agreed during the talking stage, and progress updates are
-                    provided throughout the build. Payments are non-refundable after delivery, but reasonable changes
-                    inside the original scope are included.
-                </p>
+                <div class="terms-card">
+                    <div class="terms-row">
+                        <div class="terms-highlight">
+                            <span class="terms-icon">&#128179;</span>
+                            <div>
+                                <strong>Payment</strong>
+                                <p>Accepted in <span class="hl">USD</span> or <span class="hl">Robux</span></p>
+                            </div>
+                        </div>
+                        <div class="terms-highlight">
+                            <span class="terms-icon">&#128176;</span>
+                            <div>
+                                <strong>Minimums</strong>
+                                <p><span class="hl">20,000 R$</span> for Robux &middot; <span class="hl">$500+</span> for USD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="terms-body">
+                        Payment structure is agreed during the talking stage, and progress updates are
+                        provided throughout the build. Payments are non-refundable after delivery, but reasonable changes
+                        inside the original scope are included.
+                    </p>
+                </div>
             </section>
 
             <section class="contact-panel">
@@ -183,10 +250,9 @@
                     <p>Send the feature, budget, timeline, and any existing technical context. I'll tell you whether I'm
                         the right fit.</p>
                 </div>
-                <div class="contact-buttons">
-                    <a href="https://discord.gg/5HBqFz77fW" target="_blank" rel="noopener noreferrer"
-                        class="primary-button">
-                        Contact on Discord ↗
+                <div class="contact-buttons reveal stagger-3">
+                    <a class="primary-button">
+                        Discord: abi_dev07
                     </a>
                     <a href="https://www.roblox.com/users/487533386/profile" target="_blank" rel="noopener noreferrer">
                         View Roblox profile ↗
